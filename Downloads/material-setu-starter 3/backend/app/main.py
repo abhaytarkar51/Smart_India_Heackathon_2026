@@ -105,7 +105,7 @@ def _actor(user: object) -> str:
 # HEALTH CHECK
 # ---------------------------------------------------------
 
-@app.get("/api/health")
+@app.get("/health")
 def health():
     with get_connection() as conn:
         with conn.cursor() as cur:
